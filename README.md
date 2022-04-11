@@ -16,7 +16,7 @@
 <hr>
  
 <h2 id="sobre-o-projeto"> :page_with_curl:Sobre o projeto</h2>
-<p>Projeto feito com o objetivo de praticar os ensinamentos de HTML e CSS, para posteriomente desenvolver primeiro projeto individual da <strong><a href="https://www.newtab.academy/">Newtab Academy</a></strong> :rocket:<p>
+<p>Projeto feito com o objetivo de praticar os ensinamentos de HTML e CSS, para posteriomente desenvolver o primeiro projeto individual da <strong><a href="https://www.newtab.academy/">Newtab Academy</a></strong> :rocket:<p>
 <hr>
  
  <h2 id="layout">:art:Layout</h2>
