@@ -13,3 +13,7 @@
 .lista tr td {
   padding: 5px;
 }
+
+.lista tr td button {
+  cursor: pointer;
+}
