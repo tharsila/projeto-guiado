@@ -25,7 +25,7 @@
 
       <div class="linha-formulario">
         <label class="label-grande" for="phone">Telefone:</label>
-        <input type="text" name="phone" id="phone" required>
+        <input type="text" name="phone" id="phone" onkeypress="testPhone(event)" onfocus="this.value = ''" required>
       </div>
 
       <div class="linha-formulario xp-line" style="display: flex">
