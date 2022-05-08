@@ -1,14 +1,21 @@
 function testForm (event) {
   event.preventDefault();
 
-  for (i in event.target.elements['phone'].value) {
+  /* for (i in event.target.elements['phone'].value) {
     if ('0123456789'.indexOf(event.target.elements['phone'].value[i]) === -1 ) {
       alert('Apenas números são permitidos no campo telefone');
       return false;
     }
+  } */
+
+  const phonePattern = /[^0-9-() ]+/g;
+
+  if (phonePattern.test(event.target.elements['phone'].value)) {
+    alert('Apenas números são permitidos no campo telefone');
+    return false;
   }
 
-  if (event.target.elements['phone'].value.length < 11) {
+  if (event.target.elements['phone'].value.replace(/[-() ]/g, '').length < 11) {
     alert('Número inválido!');
     return false;
   }
@@ -59,5 +66,22 @@ if (id !== null) {
     document.getElementById('xp-yes').checked = true
   } else {
     document.getElementById('xp-no').checked = true
+  }
+}
+
+function testPhone (event) {
+  if (event.target.value.length === 0) {
+    event.target.value += '(';
+  }
+  if (event.target.value.length === 3) {
+    event.target.value += ') ';
+  }
+  if (event.target.value.length === 10) {
+    event.target.value += '-';
+  }
+
+  event.preventDefault();
+  if ((/[0-9]/g).test(event.key) && event.target.value.length < 15) {
+    event.target.value += event.key;
   }
 }
