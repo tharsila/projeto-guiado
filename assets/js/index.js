@@ -25,7 +25,8 @@ function drawTable () {
       <td>${people[person].tel}</td>
       <td>${(people[person].xp ? '<strong style="color:green">Sim</strong>' : '<strong style="color:red">Não</strong>')}</td>
       <td>
-      <button onClick="deleteUser(${person})">Excluir</button>
+        <button onClick="deleteUser(${person})">Excluir</button>
+        <a href="./src/form.html?person=${person}">Editar</a>
       </td>
     </tr>
     `
